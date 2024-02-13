@@ -22,7 +22,8 @@ const getPokemon = async (id: string): Promise<Pokemon> => {
             revalidate: 60,
         }
     }).then( res => res.json());
-
+    
+    console.log('el id es', id);
     return pokemon;
 }
 
